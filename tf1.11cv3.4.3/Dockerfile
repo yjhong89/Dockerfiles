@@ -1,4 +1,5 @@
 FROM nvidia/cuda:9.0-cudnn7-devel
+MAINTAINER yukuainan89 <yukuainan89@gmail.com>
 
 RUN apt-get update && \
         apt-get install -y \

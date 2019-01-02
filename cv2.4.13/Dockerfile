@@ -1,5 +1,4 @@
 FROM python:2
-MAINTAINER hulkibrain <alevoorsoorya01@gmail.com>
 
 # Installing dependencies for linux installation of opencv
 RUN apt-get update && \
@@ -43,3 +42,8 @@ RUN wget https://github.com/opencv/opencv/archive/2.4.13.3.zip \
 && rm -r /opencv-2.4.13.3
 
 ENV LD_LIBRARY_PATH /usr/local/lib:$LD_LIBRARY_PATH
+
+ADD ./test.py /test.py
+WORKDIR /
+
+CMD python test.py 
