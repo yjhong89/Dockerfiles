@@ -1,0 +1,5 @@
+Opencv-python == 3.4.3.18
+matplotlib == 2.2.2
+NumPy >= 1.14.1
+Pillow >= 4.1.1
+requests == 2.21.0
