@@ -43,25 +43,3 @@ RUN wget https://github.com/opencv/opencv/archive/2.4.13.3.zip \
 && rm -r /opencv-2.4.13.3
 
 ENV LD_LIBRARY_PATH /usr/local/lib:$LD_LIBRARY_PATH
-
-#RUN ln -s /usr/lib/libhunspell-1.4.so /usr/lib/libhunspell-1.3.so.0 \
-#    && ln -s /usr/lib/libopencv_core.so /usr/lib/libopencv_core.so.2.4 \
-#    && ln -s /usr/lib/libopencv_highgui.so /usr/lib/libopencv_highgui.so.2.4 \
-#    && ln -s /usr/lib/libopencv_imgproc.so /usr/lib/libopencv_imgproc.so.2.4
-## Run the image as a non-root user
-#RUN adduser myuser
-#USER myuser
-#
-## Add your project repository
-## SYNTAX -->   ADD ./yourFolder /someFolder/youFolder
-## The "/someFolder/youFolder" name could be anything, in this example it is /opt/app
-## It could simply be /app or /wookie/chewbacca or anything, change following commands accordingly
-#
-#ADD ./app /opt/app/
-#WORKDIR /opt/app
-#
-## Running a test file
-## Do project related stuff here
-#
-#CMD python test.py
-#
