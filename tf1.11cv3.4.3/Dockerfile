@@ -76,6 +76,6 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 
 # link cv to python library
 #RUN ln -sf /usr/local/python/cv2 $(python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")
-#ENV LI_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/lib
+#ENV LD_LIBRARY_PATH /usr/local/lib:$LD_LIBRARY_PATH
 
 ENV LANG C.UTF-8
